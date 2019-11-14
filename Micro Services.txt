@@ -1,0 +1,49 @@
+Microservice is a small, loosely coupled distributed service (Ex: 50,00,000 lines code)
+
+Large application and decompose or break into easily manageable small components.
+
+The main objective of the micro-services implementation is to split up the application as separate service for each core and API service functionality and it should be deployed independently on cloud. 
+
+-Make code changes fast 
+-Independent deployment
+-Deployment time reduce
+-Technology diversity i.e. we can mix libraries, databases, frameworks etc.
+-Fault isolation i.e. a process failure should not bring the whole system down.
+-Easier Process Adaption
+-Each service can be independently DURS (deployed, updated, replaced, and scaled).
+
+
+	Microservice Frameworks for Java:
+		-Spring Boot 
+		-Spark
+		-Jersey
+		-Swagger
+		-Dropwizard
+		-Ninja Web Framework
+		-Play Framework
+		-RestExpress
+		-Restlet
+		-Restx
+
+	Microservices With Spring Boot:
+		-Spring Framework
+		-Spring Cloud
+		-Spring REST
+		-Spring Security
+		-Spring Batch
+		-Spring IO Platform
+		-Spring Social
+		-Spring Mobile
+
+
+Example:
+
+
+Create microservices using Spring Web:
+
+https://dzone.com/articles/spring-boot-microservices-building-microservices-a
+
+
+https://dzone.com/articles/microservices-with-spring
+
+

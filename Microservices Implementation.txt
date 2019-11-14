@@ -1,0 +1,19 @@
+Microservices Implementation
+----------------------------------------------------
+
+Creation of Eureka Discovery Server
+With Spring Boot, just one annotation @EnableEurekaServer does the job.
+
+
+Creating Producer Microservice
+Register itself with Discovery Service
+@EnableDiscoveryClient activates the Netflix Eureka DiscoveryClient implementation
+
+
+Create Consumer Microservice which finds the producer service instance registered with Discovery Service
+Register itself with Discovery Service
+@EnableDiscoveryClient activates the Netflix Eureka DiscoveryClient implementation
+Requests for DiscoveryClient instance of Producer Microservice using a smart RestTemplate.
+
+
+We can then test end-to-end result by starting the Eureka service first. Once the Eureka service starts up, start the discovery clients one after the other.

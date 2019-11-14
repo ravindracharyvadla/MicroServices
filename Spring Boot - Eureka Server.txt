@@ -1,0 +1,29 @@
+Spring Boot - Eureka Server
+------------------------------
+
+
+Eureka Server:
+------------------------------
+
+Eureka Server is an application that holds the information about all client-service applications. Every Micro service will register into the Eureka server and Eureka server knows all the client applications running on each port and IP address. Eureka Server is also known as Discovery Server.
+
+
+Dependency for eureka-server:
+-----------------------------
+<dependency>
+<groupId>org.springframework.cloud</groupId>
+   <artifactId>spring-cloud-starter-eureka-server</artifactId>
+</dependency>
+
+
+
+
+
+
+Run:
+----------------------------------
+http://localhost:8761/
+
+
+
+Ref: https://www.dineshonjava.com/microservices-with-spring-boot/

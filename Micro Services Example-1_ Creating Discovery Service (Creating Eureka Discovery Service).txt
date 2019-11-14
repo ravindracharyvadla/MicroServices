@@ -1,0 +1,52 @@
+Micro Services Example-1: Creating Discovery Service (Creating Eureka Discovery Service)
+
+Eureka Server:
+------------------------------
+
+Eureka Server is an application that holds the information about all client-service applications. Every Micro service will register into the Eureka server and Eureka server knows all the client applications running on each port and IP address. Eureka Server is also known as Discovery Server.
+
+
+
+Step-1: pom.xml
+
+
+
+<!-- Eureka registration server -->
+  <dependency>
+   <groupId>org.springframework.cloud</groupId>
+   <artifactId>spring-cloud-starter-eureka-server</artifactId>
+  </dependency>
+
+
+Step-2:application.properties or application.yml
+
+# Configure this Discovery Server
+eureka.instance.hostname: localhost
+eureka.client.registerWithEureka: true
+eureka.client. fetchRegistry: true
+   
+
+# HTTP (Tomcat) port
+server. port: 1111   
+ 
+
+
+Step-3:
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
+
+@SpringBootApplication
+@EnableEurekaServer
+public class DiscoveryMicroserviceServerApplication {
+
+ public static void main(String[] args) {
+  SpringApplication.run(DiscoveryMicroserviceServerApplication.class, args);
+ }
+}
+
+
+Step-4:
+
+http://localhost:1111/
